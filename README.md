@@ -13,6 +13,7 @@ git clone https://github.com/galihap76/tasek.git
 
 # Role Admin 👨‍💼
 - Lihat informasi login
+- Lihat data pelajar
 - Tambah data pelajar
 - Edit data pelajar
 - Delete data pelajar
