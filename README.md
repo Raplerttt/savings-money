@@ -5,6 +5,12 @@ Jadi, aplikasi ini harus melakukan registrasi pada role user dengan email sekola
 
 Saya ulangi lagi, aplikasi ini untuk kesenangan pribadi dan contekan saya. Jadi maaf, saya gak bisa menulis email untuk admin dan password ke README.md nya langsung.
 
+# Clone 🔁
+
+```
+git clone https://github.com/galihap76/tasek.git
+```
+
 # Role Admin 👨‍💼
 - Lihat informasi login
 - Tambah data pelajar
@@ -97,7 +103,7 @@ Saya ulangi lagi, aplikasi ini untuk kesenangan pribadi dan contekan saya. Jadi 
 
 Q : Apakah saya boleh menggunakan aplikasi ini untuk kepentingan pribadi maupun untuk belajar?
 
-A : Ya, boleh. Anda bisa memodifikasi aplikasi ini sesuai kebutuhan Anda. Tentu, Anda boleh mengubah email dan password pada role admin. 
+A : Ya, boleh. Anda boleh memodifikasi aplikasi ini sesuai kebutuhan Anda. Tentu, Anda boleh mengubah email dan password pada role admin. 
 
 Q : Bolehkah saya menjual aplikasi ini yang telah saya edit sendiri?
 
