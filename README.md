@@ -19,6 +19,7 @@ git clone https://github.com/galihap76/tasek.git
 - Delete data pelajar
 - Lihat data pelajar yang aktif
 - Lihat data pelajar yang tidak aktif
+- Lihat saldo berdasarkan tanggal masuk dan update 
 - Cetak semua data rekening atau saldo pelajar
 
 # Role User 🧑
@@ -26,6 +27,7 @@ git clone https://github.com/galihap76/tasek.git
 - Ubah password
 - Ubah foto profile
 - Lihat tabungan berdasarkan user yang login
+- Lihat saldo berdasarkan tanggal masuk dan update 
 - Cetak rekening atau saldo berdasarkan user yang login
 
 # Screenshots 📸
