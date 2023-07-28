@@ -1,17 +1,17 @@
-# Tabungan Sekolah 🏫💰
+## Tabungan Sekolah 🏫💰
 Tasek kepanjangan dari tabungan sekolah merupakan web aplikasi tabungan sekolah untuk pelajar SD, SMP, SMA dan SMK. Saya membuat ini hanya sekedar kesenangan pribadi dan contekan saja. Aplikasi ini memiliki multi user yang terdapat role admin dan user biasa yaitu untuk pelajar.
 
 Jadi, aplikasi ini harus melakukan registrasi pada role user dengan email sekolah seperti contoh@smk.belajar.id yang sudah di berikan pada pihak sekolah. Role admin akan melakukan beberapa aksi pada data pelajar terkait. Email untuk admin sudah di tertanam pada aplikasi bawahan dengan yang saya buat.
 
 Saya ulangi lagi, aplikasi ini untuk kesenangan pribadi dan contekan saya. Jadi maaf, saya gak bisa menulis email untuk admin dan password ke README.md nya langsung.
 
-# Clone 🔁
+## Clone 🔁
 
 ```
 git clone https://github.com/galihap76/tasek.git
 ```
 
-# Role Admin 👨‍💼
+## Role Admin 👨‍💼
 - Lihat informasi login
 - Lihat data pelajar
 - Tambah data pelajar
@@ -22,7 +22,7 @@ git clone https://github.com/galihap76/tasek.git
 - Lihat saldo berdasarkan tanggal masuk dan update untuk semua pelajar
 - Cetak semua data rekening atau saldo pelajar
 
-# Role User 🧑
+## Role User 🧑
 - Lihat informasi login
 - Ubah password
 - Ubah foto profile
@@ -30,7 +30,7 @@ git clone https://github.com/galihap76/tasek.git
 - Lihat saldo tanggal masuk dan update berdasarkan user yang login
 - Cetak rekening atau saldo berdasarkan user yang login
 
-# Screenshots 📸
+## Screenshots 📸
 
 **Halaman Login**
 
@@ -102,7 +102,7 @@ git clone https://github.com/galihap76/tasek.git
 
 ![Cetak Role User](https://github.com/galihap76/tasek/assets/83481679/847284c8-69cf-4001-ae7f-eca9af3242c4)
 
-# FAQ ❔
+## FAQ ❔
 
 Q : Apakah saya boleh menggunakan aplikasi ini untuk kepentingan pribadi maupun untuk belajar?
 
@@ -112,6 +112,6 @@ Q : Bolehkah saya menjual aplikasi ini yang telah saya edit sendiri?
 
 A : Saya sebagai pengembang aplikasi ini, untuk masalah tersebut Anda bisa lihat license yang di gunakan pada aplikasi ini.
 
-# Note 📌
+## Note 📌
 
 Aplikasi ini terdapat beberapa bug kecil terutama pada ubah foto profile user. Jika Anda telah menginstall aplikasi ini, bisa Anda perbaiki sendiri. Saya tidak ada waktu untuk memperbaiki bug di dalam aplikasi ini karena ada masalah waktu yang tidak bisa saya hindari.
