@@ -82,9 +82,9 @@ git clone https://github.com/galihap76/tasek.git
 
 ![User Home](https://github.com/galihap76/tasek/assets/83481679/b28280ad-ee13-455e-928d-1aa21d03cf49)
 
-**Ubah Password**
+**Ganti Password**
 
-![Ubah Password](https://github.com/galihap76/tasek/assets/83481679/a0de451a-3930-4b39-9552-3cca2d2c737f)
+![Ganti Password](https://github.com/galihap76/tasek/assets/83481679/a0de451a-3930-4b39-9552-3cca2d2c737f)
 
 **Ganti Foto Profile**
 
