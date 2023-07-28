@@ -2,7 +2,7 @@
 session_start();
 include "../auth/db.php";
 
-// Mendapatkan informasi gambar yang akan dihapus sebagai gambar lama berdasarkan email
+// Mendapatkan informasi gambar yang akan di tampilkan berdasarkan email
 $stmtSelect = $conn->prepare("SELECT foto_profile FROM tbl_profiles WHERE email = :email");
 $stmtSelect->bindParam(':email', $_SESSION['email']);
 $stmtSelect->execute();
