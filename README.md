@@ -3,32 +3,17 @@ Tasek kepanjangan dari tabungan sekolah merupakan web aplikasi tabungan sekolah 
 
 Jadi, aplikasi ini harus melakukan registrasi pada role user dengan email sekolah seperti contoh@smk.belajar.id yang sudah di berikan pada pihak sekolah. Role admin akan melakukan beberapa aksi pada data pelajar terkait. Email untuk admin sudah di tertanam pada aplikasi bawahan dengan yang saya buat.
 
-Saya ulangi lagi, aplikasi ini untuk kesenangan pribadi dan contekan saya. Jadi maaf, saya gak bisa menulis email untuk admin dan password ke README.md nya langsung.
+Saya ulangi lagi, aplikasi ini sebagai projekan sampingan dan contekan. ~~Jadi maaf, saya gak bisa menulis email untuk admin dan password ke README.md nya langsung~~  Untuk database, bisa di lakukan import tabel nya pada folder **tbl_tasek**. Untuk password sebagai admin, saya lupa. Anda bisa mengubah nya jika ingin menggunakan aplikasi web ini sebagai referensi.
+
+## Fitur 📱
+
+Untuk fitur, mohon Anda bisa melihat pada <a href="https://github.com/galihap76/tasek/releases/">rilis aplikasi</a>.
 
 ## Clone 🔁
 
 ```
 git clone https://github.com/galihap76/tasek.git
 ```
-
-## Role Admin 👨‍💼
-- Lihat informasi login
-- Lihat data pelajar
-- Tambah data pelajar
-- Edit data pelajar
-- Delete data pelajar
-- Lihat data pelajar yang aktif
-- Lihat data pelajar yang tidak aktif
-- Lihat saldo berdasarkan tanggal masuk dan update untuk semua pelajar
-- Cetak semua data rekening atau saldo pelajar
-
-## Role User 🧑
-- Lihat informasi login
-- Ubah password
-- Ubah foto profile
-- Lihat tabungan berdasarkan user yang login
-- Lihat saldo tanggal masuk dan update berdasarkan user yang login
-- Cetak rekening atau saldo berdasarkan user yang login
 
 ## Screenshots 📸
 
