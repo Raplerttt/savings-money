@@ -3,11 +3,11 @@
 <hr>
 
 ## Tabungan Sekolah 🏫💰
-Tasek kepanjangan dari tabungan sekolah merupakan web aplikasi tabungan sekolah untuk pelajar SD, SMP, SMA dan SMK. Saya membuat ini hanya sekedar kesenangan pribadi dan contekan saja. Aplikasi ini memiliki multi user yang terdapat role admin dan user biasa yaitu untuk pelajar.
+Tasek kepanjangan dari tabungan sekolah merupakan web aplikasi tabungan sekolah untuk pelajar SD, SMP, SMA dan SMK. Saya membuat ini hanya sekedar projek sampingan dan contekan saja. Aplikasi ini memiliki multi user yang terdapat role admin dan user biasa yaitu untuk pelajar.
 
-Jadi, aplikasi ini harus melakukan registrasi pada role user dengan email sekolah seperti contoh@smk.belajar.id yang sudah di berikan pada pihak sekolah. Role admin akan melakukan beberapa aksi pada data pelajar terkait. Email untuk admin sudah di tertanam pada aplikasi bawahan dengan yang saya buat.
+Jadi, aplikasi ini harus melakukan registrasi pada role user dengan email sekolah seperti contoh@smk.belajar.id yang sudah di berikan pada pihak sekolah. Role admin akan melakukan beberapa aksi pada data pelajar terkait. Email untuk admin sudah ada pada aplikasi bawahan dengan yang saya buat.
 
-Saya ulangi lagi, aplikasi ini sebagai projekan sampingan dan contekan. ~~Jadi maaf, saya gak bisa menulis email untuk admin dan password ke README.md nya langsung~~  Untuk database, bisa di lakukan import tabel nya pada folder **tbl_tasek**. Untuk password sebagai admin, saya lupa. Anda bisa mengubah nya jika ingin menggunakan aplikasi web ini sebagai referensi.
+Saya ulangi lagi, aplikasi ini sebagai projek sampingan dan contekan. ~~Jadi maaf, saya gak bisa menulis email untuk admin dan password ke README.md nya langsung~~  Untuk database, bisa di lakukan import tabel nya pada folder **tbl_tasek**. Untuk password sebagai admin, saya lupa. Anda bisa mengubah nya jika ingin menggunakan aplikasi web ini sebagai referensi.
 
 ## Fitur 📱
 
