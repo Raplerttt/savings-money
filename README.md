@@ -1,3 +1,7 @@
+> 🚨 NOTICE : Mohon maaf, saya menyatakan bahwa proyek aplikasi web ini sudah tidak lagi saya kelola secara aktif meskipun sebagai projek sampingan dan contekan. Saat ini, saya belum sempat memperbaiki bug terkait perubahan foto profil. Waktu saya banyak terpakai untuk kegiatan lainnya. Anda dipersilakan untuk memperbaiki bug tersebut dan meningkatkan keamanan aplikasi. Terima kasih.
+
+<hr>
+
 ## Tabungan Sekolah 🏫💰
 Tasek kepanjangan dari tabungan sekolah merupakan web aplikasi tabungan sekolah untuk pelajar SD, SMP, SMA dan SMK. Saya membuat ini hanya sekedar kesenangan pribadi dan contekan saja. Aplikasi ini memiliki multi user yang terdapat role admin dan user biasa yaitu untuk pelajar.
 
@@ -9,10 +13,19 @@ Saya ulangi lagi, aplikasi ini sebagai projekan sampingan dan contekan. ~~Jadi m
 
 Untuk fitur, mohon Anda bisa melihat pada <a href="https://github.com/galihap76/tasek/releases/">rilis aplikasi</a>.
 
-## Clone 🔁
+## Install ⚙️
 
+Jika Anda ingin mengubah dan menggunakan aplikasi web ini, cara nya :
+1. Git clone :
 ```
 git clone https://github.com/galihap76/tasek.git
+```
+
+2. Import tabel database nya di PhpMyAdmin.
+
+3. Jalankan pada URL :
+```
+http://localhost/tasek/login.php
 ```
 
 ## Screenshots 📸
