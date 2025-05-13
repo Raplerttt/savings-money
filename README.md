@@ -113,3 +113,4 @@ A : Saya sebagai pengembang aplikasi ini, untuk masalah tersebut Anda bisa lihat
 ## Note 📌
 
 Aplikasi ini terdapat beberapa bug kecil terutama pada ubah foto profile user. Jika Anda telah menginstall aplikasi ini, bisa Anda perbaiki sendiri. Saya tidak ada waktu untuk memperbaiki bug di dalam aplikasi ini karena ada masalah waktu yang tidak bisa saya hindari.
+# savings-money
