@@ -4,13 +4,13 @@ include "../auth/db.php";
 
 // Jika peran pengguna adalah 'admin', ambil semua data dari tabel tbl_tabungan_pelajar.
 if ($_SESSION['role'] == 'admin') {
-    $sql = "SELECT id_tabungan, email, nama_lengkap, jenis_kelamin, kelas, angkatan, status, saldo 
+    $sql = "SELECT id_tabungan, email, nama_lengkap, status, saldo 
     FROM tbl_tabungan_pelajar";
 
     // Jika peran pengguna adalah 'user', ambil data dari tabel tbl_tabungan_pelajar, 
     // berdasarkan kondisi email tertentu.
 } else if ($_SESSION['role'] == 'user') {
-    $sql = "SELECT id_tabungan, email, nama_lengkap, jenis_kelamin, kelas, angkatan, status, saldo 
+    $sql = "SELECT id_tabungan, email, nama_lengkap, status, saldo 
      FROM tbl_tabungan_pelajar WHERE email = :email";
 }
 
@@ -45,9 +45,6 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC); // Ambil semua hasil dari pernyata
                             <th class="border-start flex-fill">No</th>
                             <th>Email</th>
                             <th>Nama Lengkap</th>
-                            <th>Jenis Kelamin</th>
-                            <th>Kelas</th>
-                            <th>Angkatan</th>
                             <th>Status</th>
                             <th>Saldo</th>
                             <?php echo $_SESSION['role'] == 'admin' ? '<th>Aksi</th>' : ''; ?>
@@ -63,9 +60,6 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC); // Ambil semua hasil dari pernyata
                                 <td class="border-start"><?php echo $no++; ?></td>
                                 <td><?php echo $data['email']; ?></td>
                                 <td><?php echo $data['nama_lengkap']; ?></td>
-                                <td><?php echo $data['jenis_kelamin']; ?></td>
-                                <td><?php echo $data['kelas']; ?></td>
-                                <td><?php echo $data['angkatan']; ?></td>
                                 <td><span class="badge <?php echo $data['status'] == 'aktif' ? 'text-bg-success' : 'text-bg-danger'; ?>">
                                         <?php echo $data['status']; ?>
                                     </span></td>

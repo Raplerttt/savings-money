@@ -8,13 +8,13 @@ if (isset($_POST['login'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    // Melakukan dan mengambil data admin atau user yang login dari tabel database
+    // Query untuk mengambil data user berdasarkan email
     $sql = "SELECT * FROM tbl_auth a 
     INNER JOIN tbl_roles b ON a.id_role = b.id_role
-    INNER JOIN tbl_profiles c ON a.email = c.email
-    WHERE a.email = :email AND a.nama_lengkap = :nama_lengkap";
+    INNER JOIN tbl_profiles c ON LOWER(a.email) = LOWER(c.email)
+    WHERE LOWER(a.email) = LOWER(:email)";
+    
     $stmt = $conn->prepare($sql);
-    $stmt->bindParam(":nama_lengkap", $nama_lengkap);
     $stmt->bindParam(":email", $email);
     $stmt->execute();
     $result = $stmt->fetch(PDO::FETCH_ASSOC);

@@ -17,11 +17,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Memanggil fungsi security input untuk membersihkan, mengamankan input pada variabel email, nama lengkap, jenis kelamin, kelas
     $email = securityInput($_POST['email']);
     $nama_lengkap = securityInput($_POST['nama_lengkap']);
-    $jenis_kelamin = securityInput($_POST['jenis_kelamin']);
-    $kelas = securityInput($_POST['kelas']);
-
-    // Variabel angkatan 
-    $angkatan = $_POST['angkatan'];
 
     // Variabel status
     $status = $_POST['status'];
@@ -36,16 +31,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $currentDate = date("Y-m-d");
 
     // Menyiapkan pernyataan SQL dengan menggunakan parameter placeholder
-    $sql = "INSERT INTO tbl_tabungan_pelajar (email, nama_lengkap, jenis_kelamin, kelas, angkatan, status, saldo, created_at, updated_at) 
-    VALUES (:email, :nama_lengkap, :jenis_kelamin, :kelas, :angkatan, :status, :saldo, :created_at, :updated_at)";
+    $sql = "INSERT INTO tbl_tabungan_pelajar (email, nama_lengkap, status, saldo, created_at, updated_at) 
+    VALUES (:email, :nama_lengkap, :status, :saldo, :created_at, :updated_at)";
     $stmt = $conn->prepare($sql);
 
     // Mengikat nilai-nilai ke parameter-placeholder
     $stmt->bindParam(':email', $email);
     $stmt->bindParam(':nama_lengkap', $nama_lengkap);
-    $stmt->bindParam(':jenis_kelamin', $jenis_kelamin);
-    $stmt->bindParam(':kelas', $kelas);
-    $stmt->bindParam(':angkatan', $angkatan);
     $stmt->bindParam(':status', $status);
     $stmt->bindParam(':saldo', $formatSaldo);
     $stmt->bindParam(':created_at', $currentDate);

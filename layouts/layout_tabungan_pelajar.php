@@ -10,7 +10,7 @@
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="tambahPelajar">Tambah Pelajar</h1>
+                            <h1 class="modal-title fs-5" id="tambahPelajar">Tambah Tabungan</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
 
@@ -30,29 +30,8 @@
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="kelas" class="form-label">Kelas</label>
-                                    <input type="text" class="form-control" id="kelas" name="kelas" autocomplete="off" required />
-                                </div>
-
-                                <div class="mb-3">
                                     <label for="saldo" class="form-label">Saldo</label>
                                     <input type="number" class="form-control" id="saldo" name="saldo" autocomplete="off" required />
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="angkatan" class="form-label">Angkatan</label>
-                                    <select class="form-select angkatan" id="angkatan" name="angkatan" required>
-                                        <option selected></option>
-                                    </select>
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="jenis_kelamin" class="form-label">Jenis Kelamin</label>
-                                    <select class="form-select" id="jenis_kelamin" name="jenis_kelamin" required>
-                                        <option selected></option>
-                                        <option value="laki laki">laki laki</option>
-                                        <option value="perempuan">perempuan</option>
-                                    </select>
                                 </div>
 
                                 <div class="mb-3">
@@ -83,7 +62,7 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="updatePelajar">Update Pelajar</h1>
+                        <h1 class="modal-title fs-5" id="updatePelajar">Update Tabungan</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 

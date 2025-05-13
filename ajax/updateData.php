@@ -19,11 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Memanggil fungsi security input untuk membersihkan, mengamankan input pada variabel email, nama lengkap, jenis kelamin, kelas
     $email = securityInput($_POST['email']);
     $nama_lengkap = securityInput($_POST['nama_lengkap']);
-    $jenis_kelamin = securityInput($_POST['jenis_kelamin']);
-    $kelas = securityInput($_POST['kelas']);
 
-    // Variabel angkatan
-    $angkatan = $_POST['angkatan'];
 
     // Variabel status
     $status = $_POST['status'];
@@ -41,9 +37,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "UPDATE tbl_tabungan_pelajar SET 
                 email = :email,
                 nama_lengkap = :nama_lengkap,
-                jenis_kelamin = :jenis_kelamin,
-                kelas = :kelas,
-                angkatan = :angkatan,
                 status = :status,
                 saldo = :saldo,
                 updated_at = :updated_at
@@ -54,9 +47,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Mengikat nilai-nilai ke parameter-placeholder
     $stmt->bindParam(':email', $email);
     $stmt->bindParam(':nama_lengkap', $nama_lengkap);
-    $stmt->bindParam(':jenis_kelamin', $jenis_kelamin);
-    $stmt->bindParam(':kelas', $kelas);
-    $stmt->bindParam(':angkatan', $angkatan);
     $stmt->bindParam(':status', $status);
     $stmt->bindParam(':saldo', $formatSaldo);
     $stmt->bindParam(':updated_at', $currentDate);

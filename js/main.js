@@ -188,15 +188,6 @@ $(document).ready(function () {
         .closest("tr")
         .find("td:eq(3)")
         .text(); // Mendapatkan nama lengkap dari elemen terkait
-      let jenis_kelamin = $(event.relatedTarget)
-        .closest("tr")
-        .find("td:eq(4)")
-        .text(); // Mendapatkan jenis kelamin dari elemen terkait
-      let kelas = $(event.relatedTarget).closest("tr").find("td:eq(5)").text(); // Mendapatkan kelas dari elemen terkait
-      let angkatan = $(event.relatedTarget)
-        .closest("tr")
-        .find("td:eq(6)")
-        .text(); // Mendapatkan angkatan dari elemen terkait
       let status = $(event.relatedTarget).closest("tr").find("td:eq(7)").text(); // Mendapatkan status dari elemen terkait
       let saldo = $(event.relatedTarget).closest("tr").find("td:eq(8)").text(); // Mendapatkan saldo dari elemen terkait
 
@@ -206,12 +197,6 @@ $(document).ready(function () {
       let dropdownStatus = "";
       let limitSizeString_Aktif = 82;
       let limitSizeString_TidakAktif = 88;
-
-      if (jenis_kelamin == "laki laki") {
-        dropdownGender += "perempuan";
-      } else if (jenis_kelamin == "perempuan") {
-        dropdownGender += "laki laki";
-      }
 
       if (status.length == limitSizeString_Aktif) {
         updateStringStatus += "aktif";
@@ -243,29 +228,10 @@ $(document).ready(function () {
 </div>
 
 <div class="mb-3">
-  <label for="kelas" class="form-label">Kelas</label>
-  <input type="text" class="form-control" id="kelas" name="kelas" autocomplete='off' value="${kelas}" required/>
-</div>
-
-<div class="mb-3">
   <label for="saldo" class="form-label">Saldo</label>
   <input type="text" class="form-control saldo" id="saldo" name="saldo" autocomplete="off" value="${saldo}"/>
 </div>
 
-<div class="mb-3">
-  <label for="angkatan" class="form-label">Angkatan</label>
-  <select class="form-select angkatan" id="angkatan" name="angkatan">
-      <option value="${angkatan}">${angkatan}</option>
-  </select>
-</div>
-
-<div class="mb-3">
-  <label for="jenis_kelamin" class="form-label">Jenis Kelamin</label>
-  <select class="form-select" id="jenis_kelamin" name="jenis_kelamin">
-      <option value="${jenis_kelamin}">${jenis_kelamin}</option>
-      <option value="${dropdownGender}">${dropdownGender}</option>   
-  </select>
-</div>
 
 <div class="mb-3">
   <label for="status" class="form-label">Status</label>

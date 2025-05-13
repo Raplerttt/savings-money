@@ -16,7 +16,7 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <div class="card mb-4 mt-5">
                 <div class="card-header">
                     <i class="fas fa-table me-1"></i>
-                    DataTable Pelajar Tidak Aktif
+                    DataTable User Tidak Aktif
                 </div>
 
                 <div class="card-body">

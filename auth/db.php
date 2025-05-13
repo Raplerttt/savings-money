@@ -1,13 +1,19 @@
 <?php
 
-// Koneksi database menggunakan PDO PHP
-$servername = "localhost";
-$username = "root";
-$password = "";
+$host = 'ep-lingering-hill-a4roc2ic-pooler.us-east-1.aws.neon.tech';
+$dbname = 'neondb';
+$user = 'neondb_owner';
+$password = 'npg_JIAYCFwR0G4o';
+$sslmode = 'require';
 
-$conn = new PDO("mysql:host=$servername;dbname=db_tasek", $username, $password);
-$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
+try {
+    $dsn = "pgsql:host=$host;port=5432;dbname=$dbname;sslmode=$sslmode";
+    $conn = new PDO($dsn, $user, $password);
+    // Aktifkan error mode
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    echo "Koneksi gagal: " . $e->getMessage();
+}
 
 function tutupKoneksi($conn)
 {

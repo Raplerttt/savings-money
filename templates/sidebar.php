@@ -80,18 +80,18 @@ function layoutApps()
                     <?php if ($_SESSION['role'] == 'admin') { ?>
 
                         <!-- Menu data pelajar untuk role admin-->
-                        <div class="sb-sidenav-menu-heading">Data Pelajar</div>
+                        <div class="sb-sidenav-menu-heading">Data User</div>
                         <a class="nav-link" href="tabungan_pelajar.php">
                             <div class="sb-nav-link-icon"><i class="bi bi-file-person-fill"></i></div>
-                            Tabungan Pelajar
+                            Tabungan
                         </a>
                         <a class="nav-link" href="pelajar_aktif.php">
                             <div class="sb-nav-link-icon"><i class="bi bi-person-check-fill"></i></div>
-                            Pelajar Aktif
+                            User Aktif
                         </a>
                         <a class="nav-link" href="pelajar_tidak_aktif.php">
                             <div class="sb-nav-link-icon"><i class="bi bi-person-fill-dash"></i></div>
-                            Pelajar Tidak Aktif
+                            User Tidak Aktif
                         </a>
                         <!-- </Akhir menu data pelajar -->
 
@@ -99,7 +99,7 @@ function layoutApps()
                         <div class="sb-sidenav-menu-heading">Laporan</div>
                         <a class="nav-link" href="cetak_rekening.php">
                             <div class="sb-nav-link-icon"><i class="bi bi-printer-fill"></i></div>
-                            Cetak Saldo Pelajar
+                            Cetak Saldo 
                         </a>
                         <!-- </Akhir menu laporan -->
                     <?php } ?>
@@ -109,7 +109,7 @@ function layoutApps()
                     <?php if ($_SESSION['role'] == 'user') { ?>
 
                         <!-- Menu data pelajar untuk role user-->
-                        <div class="sb-sidenav-menu-heading">Data Pelajar</div>
+                        <div class="sb-sidenav-menu-heading">Data diri</div>
 
                         <a class="nav-link" href="tabungan_pelajar.php">
                             <div class="sb-nav-link-icon"><i class="bi bi-file-person-fill"></i></div>

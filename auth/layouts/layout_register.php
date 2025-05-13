@@ -19,7 +19,7 @@
         $password = htmlspecialchars($_POST['password']);
 
         // Id role untuk user
-        $id_role = 2;
+        $id_role = 1;
 
         // Meng-hash password dengan algoritma default
         $password_hash = password_hash($password, PASSWORD_DEFAULT);
@@ -81,7 +81,7 @@
                 header('Location: login.php');
             } else {
                 $conn->rollBack(); // Rollback transaction jika ada pernyataan yang gagal dieksekusi
-            }
+            } 
         }
     }
     ?>
